@@ -8,4 +8,6 @@ header > img {
     background-repeat: no-repeat;
     background-size: 2000px 1000px;
     text-align: center;
+    border-color: black;
+    border-width: 5px;
 }
