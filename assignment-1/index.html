@@ -53,9 +53,17 @@
                </fieldset>
                <!--User order options-->
                <fieldset>
-                <legend>Perfered Order Method</legend>
-
-                
+                    <legend>Perfered Order Method</legend>
+                    <p>Dining Option:</p>
+                    <input type="radio" id="takeout" name="dining" value="takeout" />
+                    <label for="takeout">Take Out</label>
+                    <input type="radio" id="delivery" name="dining" value="delivery" />
+                    <label for="delivery">Delivery</label>
+                    <input type="radio" id="eatin" name="dining" value="eatin" />
+                    <label for="eatin">Eat In</label>
+                    <br />
+                    <label for="instructions">Special Request:</label><br />
+                    <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea>
                </fieldset>
             </form>
         </main>
