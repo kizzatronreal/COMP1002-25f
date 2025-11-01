@@ -4,16 +4,19 @@
     <head>
         <meta charset="8-UTF">
         <title>Pizza Delivery Webpage</title>
+        <!-- Link style.css to html page -->
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <header>
+            <!--Title Information-->
             <h1>Order Your Pizza</h1>
             <img src="images/yummypizza.jpg" alt="Perfect Cheese Pizza"/>
         </header>
         <main>
             <form>
                 <fieldset>
+                    <!--Main Pizza Details (i.e size, toppings, shape)-->
                     <legend>Pizza Details</legend>
                     <label for="quantity">Number of pizzas:</label>
                     <input type="number" id="quantity" name="quantity" min="1" required/>
@@ -29,8 +32,15 @@
                     <label for="round">Round</label>
                     <input type="radio" id="square" name="shape" value="square" />
                     <label for="square">Square</label>
-
-
+                    
+                    <p>Crust Type:</p>
+                    <input type="radio" id="thin" name="crust" value="thin" />
+                    <label for="thin">Thin</label>
+                    <input type="radio" id="deep" name="crust" value="deep" />
+                    <label for="deep">Deep Dish</label>
+                    <input type="radio" id="stuffed" name="crust" value="stuffed" />
+                    <label for="stuffed">Stuffed</label>
+                    
                     <p>Toppings:</p>
                     <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni" />
                     <label for="pepperoni">Pepperoni</label>
@@ -40,6 +50,12 @@
                     <label for="onions">Onions</label>
                     <input type="checkbox" id="olives" name="toppings" value="olives" />
                     <label for="olives">Pineapple</label>
+               </fieldset>
+               <!--User order options-->
+               <fieldset>
+                <legend>Perfered Order Method</legend>
+
+                
                </fieldset>
             </form>
         </main>
