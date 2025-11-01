@@ -6,7 +6,7 @@ header > img {
 * {
     background: url("images/backround_pizza_image.jpg");
     background-repeat: no-repeat;
-    background-size: 2000px 1000px;
+    background-size: 2000px 2000px;
     text-align: center;
     border-color: black;
     border-width: 5px;
