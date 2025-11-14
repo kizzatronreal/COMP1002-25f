@@ -153,3 +153,57 @@ footer {
 	color: white;
 	background-color: darkorange;
 }
+
+/*
+Selector Type	Example	Specificity Points	Notes
+Inline style	<div style="color:red">	1000	Highest priority (unless !important elsewhere)
+ID	#header	100	Very strong, beats classes and elements
+Class	.article	10	Also applies to pseudo-classes like :hover
+Attribute	[lang="en"], [type="text"]	10	Counts like a class
+Pseudo-class	:hover, :focus	10	Counts like a class/attribute
+Element / Type	p, h1, div	1	Lowest specificity (without inheritance)
+Pseudo-element	::before, ::after	1	Same as element selectors
+
+
+Basics of CSS
+
+Class Selector:
+.threat{
+	background: red;
+}
+ID Selector:
+#robot{
+Background: black;
+border: 10px;
+}
+Universal Selector: (EVERY ELEMENT)
+*{
+	border: 3px;
+}
+Attribute Selector:
+[lang=“fr”]{
+	border: 5px dotted red;
+}
+Pseduclass selector:
+p:hover{
+	color: green;
+	font-style: italic;
+}
+Pseudoelement selector:
+p::first-line {	font-size: 300%;
+}
+Decendent selector:
+h1 em{	text-transform: uppercase;
+}
+Adjacent Selector/Sibling Selector: (Selects the P elements that are next to an H2 element and they share the same parent)
+h2 + p{	background-color: green;
+} 
+General Sibling Selectors:(Targets all P elements that are siblings of an H2 element, sharing the same parent)
+H2 ~ p {
+	backround-color: red;
+}
+Grounded Selectors: Changes both elements
+H1, h2{	text-shadow: 3px 3px 3px black;
+}
+
+*/
