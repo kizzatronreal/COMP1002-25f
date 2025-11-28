@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<title>Image Gallery | Lighting Technology</title>
 		<!-- STEP B: Add some EMBEDDED JavaScript below that generates an alert dialog whenever the page is loaded or refreshed -->
-
+		<script src="js/gallery.js" defer></script>
 		<!-- STEP C: Move the above EMBEDDED JavaScript to the end of this file, just before the close of the BODY element -->
 		<style type="text/css">
 			@import url("css/styles.css");
@@ -25,7 +25,7 @@
 				</li>
 			</ul>
 			<!-- STEP A: Add some INLINE JavaScript that generates an alert dialog when the below image is clicked -->
-			<img id="placeholder" src="images/incandescent.jpg" alt="Incandescent bulb" />
+			<img id="placeholder" src="images/incandescent.jpg" alt="Incandescent bulb" onclick="alert('In Line Java Script is running')" />
 			<p id="description">Click on one of the above links for more information.</p>
 		</div>
 		<!--

@@ -4,9 +4,21 @@
 // IMPORTANT: Begin by adding a SCRIPT element to 'index.html' that refers to this EXTERNAL JavaScript File
 
 // STEP 1a: Wait until the DOM is ready to be manipulated
+document.addEventListener("DOMContentLoaded", function(){
+    alert("DOM is ready to go");
+    const gallery = document.querySelector("#imagegallery");
 
+    const links = document.querySelectorAll("#imagegallery a");
+
+    for (let i = 0 ; i < links.length; i++){
+        links[i].addEventListener("click", function(event){
+            let source = links[i].getAttribute("href");
+
+            event.preventDefault();
+        })
+    }
+})
 // STEP 2a: Grab the UL for the image gallery and assign it to the variable 'gallery'
-
 // STEP 2b: Create an array composed of all the A (anchor) elements inside that UL, now referred to as 'gallery'
 
 // STEP 2c: Create a loop that iterates through each item in the links array that we just created
